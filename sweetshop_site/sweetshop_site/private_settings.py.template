@@ -1,0 +1,14 @@
+﻿DEBUG = True
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'the db engine',
+        'NAME': 'path to db or db name',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
+SECRET_KEY = 'a random string of some sort'

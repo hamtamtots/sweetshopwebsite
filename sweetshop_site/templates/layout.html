@@ -1,0 +1,30 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Corfe Castle Sweet Shop{% endblock %}</title>
+    <link rel="icon" href="{% static 'content/images/icons/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{% static 'content/images/icons/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'content/font-awesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'content/site.css' %}" />
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+
+    <div id="content" class="container well body-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
+    {% block scripts %}
+    {% endblock %}
+
+</body>
+</html>

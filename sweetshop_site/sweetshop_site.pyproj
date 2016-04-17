@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>sweetshop_site</Name>
     <RootNamespace>sweetshop_site</RootNamespace>
-    <InterpreterId>{61bb1e4c-de45-47be-ac75-2d0c8b78e466}</InterpreterId>
+    <InterpreterId>{96ed1b85-975b-4b50-a04a-cf23e1cb910f}</InterpreterId>
     <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup>
@@ -51,9 +51,31 @@
     <Content Include="bower.json" />
     <Content Include="gulpfile.js" />
     <Content Include="home\templates\home\index.html" />
+    <Content Include="less\creative.less" />
+    <Content Include="less\mixins.less" />
+    <Content Include="less\variables.less" />
     <Content Include="package.json" />
     <Content Include="requirements.txt" />
+    <Content Include="static\content\flaticon.css" />
+    <Content Include="static\content\flaticon.eot" />
+    <Content Include="static\content\flaticon.svg" />
+    <Content Include="static\content\flaticon.ttf" />
+    <Content Include="static\content\flaticon.woff" />
+    <Content Include="static\content\images\header.jpg" />
+    <Content Include="static\content\images\icons\favicon.ico" />
+    <Content Include="static\content\images\pink-white-bg-transparent.jpg" />
+    <Content Include="static\content\images\pink-white-bg-transparent.png" />
+    <Content Include="static\content\images\pink-white-bg.jpg" />
+    <Content Include="static\content\images\portfolio\1.jpg" />
+    <Content Include="static\content\images\portfolio\2.jpg" />
+    <Content Include="static\content\images\portfolio\3.jpg" />
+    <Content Include="static\content\images\portfolio\4.jpg" />
+    <Content Include="static\content\images\portfolio\5.jpg" />
+    <Content Include="static\content\images\portfolio\6.jpg" />
+    <Content Include="static\content\images\portfolio\7.jpg" />
+    <Content Include="static\content\images\portfolio\8.jpg" />
     <Content Include="static\content\site.css" />
+    <Content Include="static\scripts\creative.js" />
     <Content Include="sweetshop_site\private_settings.py.template" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\version.html" />
@@ -64,25 +86,27 @@
     <Folder Include="home\views\" />
     <Folder Include="home\templates\" />
     <Folder Include="home\static\" />
+    <Folder Include="less\" />
     <Folder Include="static\content\" />
     <Folder Include="static\content\images\" />
     <Folder Include="static\content\images\icons\" />
+    <Folder Include="static\content\images\portfolio\" />
     <Folder Include="static\scripts\" />
     <Folder Include="templates\" />
     <Folder Include="static\" />
     <Folder Include="sweetshop_site\" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="..\..\..\venvs\sweetshopsite_env\">
-      <Id>{61bb1e4c-de45-47be-ac75-2d0c8b78e466}</Id>
-      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+    <Interpreter Include="..\..\..\Virtual Environments\sweetshop_env\">
+      <Id>{96ed1b85-975b-4b50-a04a-cf23e1cb910f}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
       <Version>3.5</Version>
-      <Description>sweetshopsite_env (Python 3.5)</Description>
+      <Description>sweetshop_env (Python 64-bit 3.5)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>X86</Architecture>
+      <Architecture>Amd64</Architecture>
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />

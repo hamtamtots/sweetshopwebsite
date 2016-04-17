@@ -1,9 +1,281 @@
-﻿{% extends "layout.html" %}
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
+<head>
 
-<div class="jumbotron">
-home - changed
-</div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-{% endblock %}
+    <title>Corfe Castle Sweet Shop</title>
+
+    <link rel="icon" href="{% static 'content/images/icons/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{% static 'content/images/icons/favicon.ico' %}" type="image/x-icon"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'content/font-awesome.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'content/flaticon.css' %}" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/animate.min.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'content/creative.css' %}" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Corfe Castle Sweet Shop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Sweets</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Pictures</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <hr class="primary">
+                    <p class="text-muted">Our little shop right in the heart of Corfe Castle and next to the castle ruins, is a 17th century building. There is a date stone on the front of the building depicting the actual year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sweets</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="flaticon-cookie7 wow bounceIn text-primary"></i>
+                        <h3>Sugar/Gluten Free</h3>
+                        <p class="text-muted">We stock a fine selection of <strong><em>sugar free</em></strong> and <strong><em>gluten free</em></strong> sweets, chocolates and biscuits. Some using the sugar substitute <strong><em>Stevia</em></strong> which is a natural sweetener.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="flaticon-candies5 wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Liqourice</h3>
+                        <p class="text-muted">We are a main stockist of <strong><em>Liqourice</em></strong> of all kinds, salt, double salt, Dutch, Italian, soft, hard, and gluten free as well as Natural Liquorice root. <strong><em>Liqourice</em></strong>, as well as being delicious has many medicinal uses.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="flaticon-sweet69 wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Traditional Sweets in Jars</h3>
+                        <p class="text-muted">Travel back to your childhood and choose your favourite, Sherbet lemons, pips, cola cubes, bon bons we have them all.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="flaticon-sweet71 wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Retro</h3>
+                        <p class="text-muted">Sherbet Fountain, Dib Dab, Fruit Salad, Black Jacks, Refreshers, Love Hearts. to name but a few of the sweets we all remember.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/1.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Biscuits
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/2.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Fudge and Chocolate
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/3.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Souvenirs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/4.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Wall of Sweets
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/5.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Lollipops and Candy Canes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/6.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Retro
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/7.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Glucose Free
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="{% static 'content/images/portfolio/8.jpg' %}" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Wall of Sweets
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>We are more than happy to package your favourites up and post them to you!</p>
+            </div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Us!</h2>
+                    <hr class="primary">
+                    <p></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn text-primary"></i>
+                    <p>01929 480462</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-map-marker fa-3x wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <p>The Sweet Shop<br />The Square<br />Corfe Castle<br />Dorset<br />BH20 5EZ</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-at fa-3x wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <p><a href="mailto:thesweetshopcorfecastle@hotmail.co.uk">thesweetshopcorfecastle@hotmail.co.uk</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
+    <script src="{% static 'scripts/jquery.fittext.js' %}"></script>
+    <script src="{% static 'scripts/wow.min.js' %}"></script>
+    <script src="{% static 'scripts/creative.js' %}"></script>
+
+</body>
+
+</html>

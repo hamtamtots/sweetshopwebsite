@@ -76,6 +76,7 @@
     <Content Include="static\content\images\portfolio\8.jpg" />
     <Content Include="static\content\site.css" />
     <Content Include="static\scripts\creative.js" />
+    <Content Include="static\scripts\jquery.fittext.js" />
     <Content Include="sweetshop_site\private_settings.py.template" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\version.html" />
